@@ -5,11 +5,12 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
+        <FontFamily x:Key="Baker Signet">pack://application:,,,/Fonts/#Baker Signet</FontFamily>
+
         <!-- Header text style -->
         <Style x:Key="headerTextStyle">
             <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
-            <Setter Property="Label.FontFamily" Value="Baker Signet"></Setter>
-            <Setter Property="Label.FontWeight" Value="Bold"></Setter>
+            <Setter Property="Label.FontFamily" Value="{StaticResource Baker Signet}"></Setter>
             <Setter Property="Label.FontSize" Value="18"></Setter>
             <Setter Property="Label.Foreground" Value="#0066cc"></Setter>
         </Style>

@@ -20,8 +20,24 @@ namespace CreateSSHKeys
     /// </summary>
     public partial class MainWindow : Window
     {
+        string homefolderText = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        // var welcomeText = string.Format("This will create your SSH keys and place them in your {homefolder}";
+
+        public string homefolder
+        {
+            get { return homefolderText; }
+            set { homefolderText = value; }
+        }
+
+        //public string WelcomeText
+        //{
+         //   get { return welcomeText; }
+          //  set { welcomeText = value; }
+        //}
+
         public MainWindow()
         {
+            this.DataContext = this;
             InitializeComponent();
         }
     }
