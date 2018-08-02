@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CreateSSHKeys"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="DOT SSH Key Creator" Height="500" Width="500">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="dot_background.png" />
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Grid.Row="1" Style="{StaticResource headerTextStyle}">
+            This application will automatically create and place SSH keys for server authentications.
+        </Label>
         
     </Grid>
 </Window>
